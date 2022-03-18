@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <meta name="author" content="Doctor Booking Site's Dashboard" />
+    <meta name="description" content="Dashboard for the doctor Booking Site " />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <script src="../js/script.js" defer></script>
+  </head>
+
+  <body>
+    <aside class="dsh-fixed bg-bl">
+      <ul class="between-col height4">
+        <li class="flex">
+          <div class="dsh-side-icon mr">
+            <img src="../images/dsh-moon.svg" alt="" />
+          </div>
+          <a href="#" class="dsh-logo wh">Health Lite</a>
+        </li>
+        <li class="flex dsh-active">
+          <div class="dsh-side-icon mr">
+            <img src="../images/dsh-dice.svg" alt="" />
+          </div>
+          <a href="#" class="dsh-logo wh capitalize">dashboard</a>
+        </li>
+        <li class="flex">
+          <div class="dsh-side-icon mr">
+            <img src="../images/dsh-clock.svg" alt="" />
+          </div>
+          <a href="#" class="dsh-logo wh capitalize">waiting room</a>
+        </li>
+        <li class="flex">
+          <div class="dsh-side-icon mr">
+            <img src="../images/dsh-cal.svg" alt="" />
+          </div>
+          <a href="#" class="dsh-logo wh capitalize">schedule</a>
+        </li>
+        <li class="flex">
+          <div class="dsh-side-icon mr">
+            <img src="../images/dsh-patient.svg" alt="" />
+          </div>
+          <a href="#" class="dsh-logo wh capitalize">my patients</a>
+        </li>
+        <li class="flex">
+          <div class="dsh-side-icon mr">
+            <img src="../images/dsh-note.svg" alt="" />
+          </div>
+          <a href="#" class="dsh-logo wh capitalize">notes</a>
+        </li>
+        <li class="flex">
+          <div class="dsh-side-icon mr">
+            <img src="../images/dsh-chat.svg" alt="" />
+          </div>
+          <a href="#" class="dsh-logo wh capitalize">chats</a>
+        </li>
+      </ul>
+      <ul class="between-col pt2">
+        <li class="flex pb2">
+          <div class="dsh-side-icon mr">
+            <img src="../images/dsh-fine-boy.svg" alt="" />
+          </div>
+          <a href="#" class="dsh-logo wh capitalize">my profile</a>
+        </li>
+        <li class="flex">
+          <div class="dsh-side-icon mr">
+            <img src="../images/dsh-setting.svg" alt="" />
+          </div>
+          <a href="#" class="dsh-logo wh capitalize">settings</a>
+        </li>
+      </ul>
+    </aside>
+    <main class="width6 ml2">
+      <nav class="pxy5 rel-b">
+        <div class="toggle">&#9776;</div>
+        <div class="flex float-r">
+          <div class="dsh-side-icon mr">
+            <img src="../images/dsh-bell.svg" alt="" />
+          </div>
+          <div class="dsh-side-icon">
+            <img src="../images/dsh-fem.svg" alt="" />
+          </div>
+        </div>
+      </nav>
+      <div class="bg-gr4 pxy6">
+        <div class="flex d-tablet-column">
+          <div class="width8">
+            <div class="bl-box bg-bl wh between-row px3 tablet-pad-top">
+              <div class="width8">
+                <p class="p1-dsh-mn">Welcome, Dr. Fayemi David</p>
+                <p class="p4-dsh-mn mt7">
+                  You have <span class="noOfAppointent"></span> new appointments
+                  and there are currently
+                  <span class="noOfPatients"></span>
+                  patients in the waiting room. Have a nice day at work!
+                </p>
+                <div class="flex mt7">
+                  <button
+                    class="lg-btn-dsh1 capitalize center-row opacity mr2 wh bdr-rad"
+                  >
+                    <div class="dsh-icon mr2">
+                      <img src="../images/dsh-eye-icon.svg" alt="" />
+                    </div>
+                    View your appointments
+                  </button>
+                  <button
+                    class="lg-btn-dsh2 capitalize center-row opacity mr2 wh bdr-rad"
+                  >
+                    <div class="dsh-icon mr2">
+                      <img src="../images/dsh-arrow-right.svg" alt="" />
+                    </div>
+                    Go to waiting room
+                  </button>
+                </div>
+              </div>
+              <div class="width9 tablet-img-d-none">
+                <img src="../images/dsh-doc2.svg" alt="" />
+              </div>
+            </div>
+            <div class="bg-gr4 between-row mt11">
+              <div class="col-3-3 bg-wh pxy6">
+                <div class="between-row2 pr3">
+                  <div class="dsh-card-icon-bg center-row">
+                    <div class="dsh-card-icon-siz">
+                      <img src="../images/dsh-card-pers.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="flex">
+                    <p class="p5-dash.mn capitalize all-time">all time</p>
+                    <div class="dsh-card-icon-siz2">
+                      <img
+                        src="../images/dsh-card-arr-dwn.svg"
+                        alt=""
+                        class="ml"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <p class="p2-dsh-mn inter mt4 patients"></p>
+                <p class="p8-dash-mn gr4 mt8">Total Patients</p>
+                <div class="flex mt10">
+                  <div class="dsh-card-arr2-siz mr2">
+                    <img src="../images/dsh-card-arr2-dwn.svg" alt="" />
+                  </div>
+                  <p class="p6-dash.mn fif-cent">5% less than last month</p>
+                </div>
+              </div>
+              <div class="col-3-3 bg-wh pxy6">
+                <div class="between-row2 pr3">
+                  <div class="dsh-card-icon-bg2 center-row dsh-car">
+                    <div class="dsh-card-icon-siz">
+                      <img src="../images/dsh-card-cal.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="flex">
+                    <p class="p5-dash.mn capitalize all-time">today</p>
+                    <div class="dsh-card-icon-siz2">
+                      <img
+                        src="../images/dsh-card-arr-dwn.svg"
+                        alt=""
+                        class="ml"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <p class="p2-dsh-mn inter mt4 appointments"></p>
+                <p class="p8-dash-mn gr4 mt8">appointments</p>
+                <div class="flex mt10">
+                  <div class="dsh-card-arr2-siz mr2">
+                    <img src="../images/dsh-card-arr2-up.svg" alt="" />
+                  </div>
+                  <p class="p6-dash.mn fif-cent">15% more than yesterday</p>
+                </div>
+              </div>
+              <div class="col-3-3 bg-wh pxy6">
+                <div class="between-row2 pr3">
+                  <div class="dsh-card-icon-bg3 center-row">
+                    <div class="dsh-card-icon-siz">
+                      <img src="../images/dsh-card-clock.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="flex">
+                    <p class="p5-dash.mn capitalize all-time">today</p>
+                    <div class="dsh-card-icon-siz2">
+                      <img
+                        src="../images/dsh-card-arr-dwn.svg"
+                        alt=""
+                        class="ml"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <p class="p2-dsh-mn inter mt4 noOfWaitings"></p>
+                <p class="p8-dash-mn gr4 mt8">waiting room</p>
+                <div class="flex mt10">
+                  <div class="dsh-card-arr2-siz mr2">
+                    <img src="../images/dsh-card-arr2-up.svg" alt="" />
+                  </div>
+                  <p class="p6-dash.mn fif-cent">35% less than yesterday</p>
+                </div>
+              </div>
+            </div>
+            <div class="bg-wh mt11 pxy6">
+              <div class="between-row">
+                <p class="p3-dsh-mn">Your next patients</p>
+                <div class="between-row">
+                  <p class="p5-dash.mn capitalize bl">view all</p>
+                  <div class="dsh-card-arr2-siz ml">
+                    <img src="../images/dsh-arr-bl.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="dsh-line bg-bl mt7"></div>
+              <div class="dsh-grd-sect4 full-width mt7 between-row2"></div>
+            </div>
+            <div class="mt11">
+              <img src="../images/dsh-grd-appoint.svg" alt="" />
+            </div>
+          </div>
+          <div class="width9 ml3">
+            <div class="thir">
+              <img src="../images/dsh-grd-right-cal.svg" alt="" />
+            </div>
+            <div class="thir mt11">
+              <img src="../images/dsh-grd-gend.svg" alt="" />
+            </div>
+            <div class="mt11 bg-wh pxy6">
+              <div class="between-row">
+                <p class="p3-dsh-mn capitalize">Activities</p>
+                <div class="dsh-activ-r">
+                  <img src="../images/dsh-activ-bell.svg" alt="" />
+                </div>
+              </div>
+              <div class="dsh-line bg-bl mt7"></div>
+              <div class="activ-par"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
