@@ -1,4 +1,11 @@
-// schedule
+// SCHEDULE AND DASHBOARD
+document.getElementById('hamburger').addEventListener('click', () => {
+  document.querySelector('.dsh-fixed').classList.remove('d-none-lapi')
+})
+document.getElementById('close-icon').addEventListener('click', () => {
+  document.querySelector('.dsh-fixed').classList.add('d-none-lapi')
+})
+
 let isLoading = true
 let isError = false
 let data
@@ -147,54 +154,3 @@ fetch(URL2)
     document.querySelector('.noOfWaitings').innerHTML = waitinfRoom
   })
   .then((error) => console.log(error))
-
-// CONTACT PAGE - SESSION STORAGE
-document.querySelector('.form').addEventListener('click', (e) => {
-  e.preventDefault()
-  let inputEls = document.querySelectorAll('input')
-  let textObj
-  let emailObj
-  let textAreaObj
-  let arr = []
-  let inputObjects
-  inputEls = [...inputEls]
-  const textAreaEl = document.querySelector('textarea')
-  const inputs = () => {
-    inputEls.map((input) => {
-      let inputValue = input.value
-      let txtAreaValue = textAreaEl.value
-      console.log(inputValue, txtAreaValue)
-      if (!inputValue && !txtAreaValue) {
-        alert('Fill the various spaces')
-      } else {
-        if (input.type === 'text') {
-          textObj = {
-            text: inputValue,
-          }
-          inputValue = ''
-        }
-        if (input.type === 'email') {
-          emailObj = {
-            email: inputValue,
-          }
-          inputValue = ''
-        }
-        if (txtAreaValue) {
-          textAreaObj = {
-            textArea: txtAreaValue,
-          }
-          txtAreaValue = ''
-        }
-        inputObjects = { ...emailObj, ...textObj, ...textAreaObj }
-        // console.log(inputObjects)
-      }
-    })
-    arr.push(inputObjects)
-    console.log(arr)
-    sessionStorage.setItem('contactDetails', JSON.stringify(arr))
-    let form = JSON.parse(localStorage.getItem('contactDetails'))
-    console.log(form)
-  }
-  inputs()
-  // console.log(textAreaEl)
-})

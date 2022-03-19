@@ -15,37 +15,40 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
-    <script src="../js/script.js" defer></script>
+    <script src="../js/contact.js" defer></script>
   </head>
 
   <body>
     <div>
       <header class="pxy rel cont-bey-vh cont-bg-img wh">
         <nav class="between-row pr">
-          <div class="logo uppercase wh">healtcare .</div>
-          <ul class="between-row width">
-            <li class="d-non-tablet">
-              <a href="../index.html" class="capitalize active d-none-mobile wh"
-                >home</a
-              >
+          <div class="logo uppercase bl">healtcare .</div>
+          <img
+            src="../images/hamburger-menu.svg"
+            class="d-none d-block-lapi"
+            id="index-menu"
+            alt=""
+          />
+          <ul class="between-row width ul-width" id="nav">
+            <li id="close-icon" class="d-none close-icon mb mr8">
+              <img src="../images/close-line.svg" alt="" />
             </li>
-            <li class="d-non-tablet">
-              <a href="#" class="capitalize gr d-none-tablet wh">about</a>
+            <li class="mb">
+              <a href="../index.html" class="capitalize active">home</a>
             </li>
-            <li class="d-non-tablet">
-              <a href="#" class="capitalize gr d-none-mobile wh">services</a>
+            <li class="mb">
+              <a href="#" class="capitalize gr">about</a>
             </li>
-            <li class="d-non-tablet">
-              <a
-                href="pages/contact.html"
-                class="capitalize gr d-none-mobile wh"
-                >contact</a
-              >
+            <li class="mb">
+              <a href="#" class="capitalize gr">services</a>
+            </li>
+            <li class="mb">
+              <a href="pages/contact.html" class="capitalize gr">contact</a>
             </li>
             <li>
               <a
                 href="pages/dashboard.html"
-                class="sm-btn capitalize center-row bg-wh bl bdr-rad"
+                class="sm-btn capitalize center-row bg-bl wh bdr-rad"
               >
                 get started
               </a>
@@ -125,12 +128,12 @@
                 rows="8"
                 name=""
                 id=""
-                class="cont-eml cont-inp-el-bg-cl full-width bl2 border-none pl4 mt12 textArea"
+                class="cont-eml cont-inp-el-bg-cl full-width bl2 border-none mt12 textArea"
               >
               </textarea>
               <button
                 type="button"
-                class="height12 width13 bg-bl5 center-row p9-dash.mn capitalize border-none wh mt submit"
+                class="height12 width13 bg-bl5 center-row p9-dash.mn pl2 capitalize border-none wh mt submit"
               >
                 Send Message
               </button>

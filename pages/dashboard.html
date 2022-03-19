@@ -18,8 +18,11 @@
   </head>
 
   <body>
-    <aside class="dsh-fixed bg-bl">
+    <aside class="dsh-fixed bg-bl d-none-lapi">
       <ul class="between-col height4">
+        <li id="close-icon" class="d-none close-icon">
+          <img src="../images/close-line.svg" alt="" />
+        </li>
         <li class="flex">
           <div class="dsh-side-icon mr">
             <img src="../images/dsh-moon.svg" alt="" />
@@ -42,7 +45,7 @@
           <div class="dsh-side-icon mr">
             <img src="../images/dsh-cal.svg" alt="" />
           </div>
-          <a href="#" class="dsh-logo wh capitalize">schedule</a>
+          <a href="./schedule.html" class="dsh-logo wh capitalize">schedule</a>
         </li>
         <li class="flex">
           <div class="dsh-side-icon mr">
@@ -80,13 +83,17 @@
     </aside>
     <main class="width6 ml2">
       <nav class="pxy5 rel-b">
-        <div class="toggle">&#9776;</div>
-        <div class="flex float-r">
-          <div class="dsh-side-icon mr">
-            <img src="../images/dsh-bell.svg" alt="" />
+        <div class="between-row">
+          <div id="hamburger" class="hamburger">
+            <img src="../images/hamburger-menu.svg" alt="" />
           </div>
-          <div class="dsh-side-icon">
-            <img src="../images/dsh-fem.svg" alt="" />
+          <div class="flex">
+            <div class="dsh-side-icon mr">
+              <img src="../images/dsh-bell.svg" alt="" />
+            </div>
+            <div class="dsh-side-icon">
+              <img src="../images/dsh-fem.svg" alt="" />
+            </div>
           </div>
         </div>
       </nav>

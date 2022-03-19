@@ -15,7 +15,7 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <script src="js/script.js" defer></script>
+    <script src="js/home.js" defer></script>
   </head>
 
   <body>
@@ -23,25 +23,29 @@
       <header class="pxy rel full-vh">
         <nav class="between-row pr">
           <div class="logo uppercase bl">healtcare .</div>
-          <ul class="between-row width">
-            <li class="close-btn d-block-tablet mb-tab-10">
-              <img src="images/close-line.svg" alt="" />
+          <img
+            src="images/hamburger-menu.svg"
+            class="d-none d-block-lapi"
+            id="index-menu"
+            alt=""
+          />
+          <ul class="between-row width ul-width" id="nav">
+            <li id="close-icon" class="d-none close-icon mb mr8">
+              <img src="../images/close-line.svg" alt="" />
             </li>
-            <li class="d-none-tablet">
-              <a href="#" class="capitalize active d-none-mobile">home</a>
+            <li class="mb3">
+              <a href="#" class="capitalize active">home</a>
             </li>
-            <li class="d-none-tablet">
-              <a href="#" class="capitalize gr d-none-tablet">about</a>
+            <li class="mb3">
+              <a href="#" class="capitalize gr">about</a>
             </li>
-            <li class="d-none-tablet">
-              <a href="#" class="capitalize gr d-none-mobile">services</a>
+            <li class="mb3">
+              <a href="#" class="capitalize gr">services</a>
             </li>
-            <li class="d-none-tablet">
-              <a href="pages/contact.html" class="capitalize gr d-none-mobile"
-                >contact</a
-              >
+            <li class="mb3">
+              <a href="pages/contact.html" class="capitalize gr">contact</a>
             </li>
-            <li>
+            <li class="mb3">
               <a
                 href="pages/dashboard.html"
                 class="sm-btn capitalize center-row bg-bl wh bdr-rad"
@@ -50,9 +54,6 @@
               </a>
             </li>
           </ul>
-          <li class="show-btn d-block-tablet menu">
-            <img src="images/hamburger-menu.svg" alt="" />
-          </li>
         </nav>
 
         <div class="between-row">
