@@ -15,6 +15,7 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/home-contact.css" />
     <script src="../js/contact.js" defer></script>
   </head>
 
@@ -29,7 +30,7 @@
             id="index-menu"
             alt=""
           />
-          <ul class="between-row width ul-width" id="nav">
+          <ul class="between-row width ul-width top" id="nav">
             <li id="close-icon" class="d-none close-icon mb mr8">
               <img src="../images/close-line.svg" alt="" />
             </li>
@@ -43,11 +44,11 @@
               <a href="#" class="capitalize gr">services</a>
             </li>
             <li class="mb">
-              <a href="pages/contact.html" class="capitalize gr">contact</a>
+              <a href="#" class="capitalize gr">contact</a>
             </li>
-            <li>
+            <li class="mb">
               <a
-                href="pages/dashboard.html"
+                href="dashboard.html"
                 class="sm-btn capitalize center-row bg-bl wh bdr-rad"
               >
                 get started
@@ -110,29 +111,44 @@
           </div>
           <div class="width7">
             <form action="" class="cont-form cont-form-br pxy8 form">
-              <input
-                type="text"
-                name=""
-                id=""
-                placeholder="Enter your name*"
-                class="cont-eml cont-inp-el-bg-cl full-width height11 bl2 border-none pl4 name"
-              />
-              <input
-                type="email"
-                name=""
-                id=""
-                placeholder="Enter your email address*"
-                class="cont-eml cont-inp-el-bg-cl full-width height11 bl2 border-none pl4 mt12 email"
-              />
-              <textarea
-                rows="8"
-                name=""
-                id=""
-                class="cont-eml cont-inp-el-bg-cl full-width bl2 border-none mt12 textArea"
-              >
-              </textarea>
+              <div>
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="Enter your name*"
+                  class="cont-eml cont-inp-el-bg-cl full-width height11 bl2 border-none pl4 name"
+                />
+                <div class="err-hint opacity err-hide">
+                  Please, enter your email address
+                </div>
+              </div>
+              <div>
+                <input
+                  type="email"
+                  name=""
+                  id=""
+                  placeholder="Enter your email address*"
+                  class="cont-eml cont-inp-el-bg-cl full-width height11 bl2 border-none pl4 mt12 email"
+                />
+                <div class="err-hint opacity err-hide">
+                  Please, enter your email address
+                </div>
+              </div>
+              <div>
+                <textarea
+                  rows="8"
+                  name=""
+                  id=""
+                  class="cont-eml cont-inp-el-bg-cl full-width bl2 border-none mt12 textArea"
+                >
+                </textarea>
+                <div class="err-hint opacity err-hide">
+                  Please, enter your message
+                </div>
+              </div>
               <button
-                type="button"
+                type="submit"
                 class="height12 width13 bg-bl5 center-row p9-dash.mn pl2 capitalize border-none wh mt submit"
               >
                 Send Message

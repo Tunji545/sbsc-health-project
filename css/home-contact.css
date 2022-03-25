@@ -1,0 +1,16 @@
+#close-icon {
+  display: none;
+}
+.top {
+  margin-top: 3rem;
+}
+@media screen and (max-width: 1024px) {
+  #close-icon {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  #close-icon {
+    display: block !important;
+  }
+}
